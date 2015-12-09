@@ -1,0 +1,65 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #add8e6;
+}
+
+#header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 150px;
+    background: #121b2f;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 2;
+}
+
+#psuLogo{
+    width: 245px;
+    position: fixed;
+    left: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#titleText{
+    text-align: center;
+    font-family: "Courier New", "Courier", "Helvetica", "serif";
+}
+
+#webTitle{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0 auto;
+    color: #fff;
+}
+
+#subTitle{
+    margin: 0 auto;
+    color: #ccff99;
+}
+
+#navigation nav{
+    text-align: center;
+}
+
+#navigation nav button{
+    border-radius: 5px;
+    background: #42FF99;
+    border-color: #000;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#navigation nav button:hover{
+    background: #ccff99;
+}
+
+#content{
+    width: 960px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}

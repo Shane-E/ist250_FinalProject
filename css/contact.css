@@ -1,0 +1,37 @@
+#content form{
+    margin: 0 auto;
+}
+
+#content form input:invalid{
+    border-color: red;
+    border-width: 2px;
+}
+#content form input:valid{
+    border-color: lime;
+    border-width: 2px;
+}
+
+#content form input{
+    padding: 5px;
+    margin: 5px;
+}
+
+#content form #submit{
+    float: right;
+    border-color: black;
+    border-width: 1px;
+}
+
+#content form thead{
+    text-align: center;
+}
+
+#content #formTitle{
+    font-family: "Courier", "serif";
+    text-align: left;
+}
+
+#content form #message{
+    width: 200px;
+    height: 100px;
+}
