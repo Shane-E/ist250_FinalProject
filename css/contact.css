@@ -11,6 +11,10 @@
     border-width: 2px;
 }
 
+#content form table th{
+    font-size: 2em;
+}
+
 #content form input{
     padding: 5px;
     margin: 5px;
@@ -31,7 +35,7 @@
     text-align: left;
 }
 
-#content form #message{
+#content form #input-message{
     width: 200px;
     height: 100px;
 }

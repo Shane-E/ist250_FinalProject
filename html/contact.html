@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/master.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
-    <title>Title</title>
+    <title>Contact</title>
+
+    <!-- This JavaScript is used to determine the current date and fills the date input value with that String for convenience.-->
+    <script type="text/javascript">
+        //Waits until the document has loaded so that the input variable is not null.
+        document.addEventListener("DOMContentLoaded", function(){
+            //Creates a new date and grabs the values for the current year, month and day.
+            var input = document.getElementById("input-date");
+            var date = new Date();
+            var dateString = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+
+            //Sets the input-date in the form to the constructed "Today's" date.
+            input.setAttribute("value", dateString);
+        });
+    </script>
 </head>
 <body>
 <div id="content-wrapper">
     <!-- This is the header, including navigation, for the website -->
     <div id="header">
-        <a #id="psuLink" class="urlLink" href="http://www.psu.edu/">
+        <a id="psuLink" class="urlLink" href="http://www.psu.edu/">
             <img id="psuLogo" src="../assets/PSU_Logo.jpg" alt="PSU Logo">
         </a>
         <div id="titleText">
@@ -34,25 +48,25 @@
             <table>
                 <thead>
                     <tr>
-                        <h1 id="formTitle">Contact Form</h1>
+                        <th id="formTitle">Contact Form</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><label for="username">Name:</label></td>
-                        <td><input type="text" name="name" id="username" placeholder="Your Name" required autofocus/></td>
+                        <td><label for="input-username">Name:</label></td>
+                        <td><input type="text" name="name" id="input-username" placeholder="Your Name" required autofocus/></td>
                     </tr>
                     <tr>
-                        <td><label for="email">Email:</label></td>
-                        <td><input type="email" name="email" id="email" placeholder="Example@123.com" required/></td>
+                        <td><label for="input-email">Email:</label></td>
+                        <td><input type="email" name="email" id="input-email" placeholder="Example@123.com" required/></td>
                     </tr>
                     <tr>
-                        <td><label for="date">Date:</label></td>
-                        <td><input type="date" name="date" id="date"></td>
+                        <td><label for="input-date">Date:</label></td>
+                        <td><input type="date" name="date" id="input-date"></td>
                     </tr>
                     <tr>
-                        <td><label for="message">Message:</label></td>
-                        <td><input type="text" name="message" id="message" placeholder="Enter A Message" required/></td>
+                        <td><label for="input-message">Message:</label></td>
+                        <td><input type="text" name="message" id="input-message" placeholder="Enter A Message" required/></td>
                     </tr>
                     <tr>
                         <td></td>
