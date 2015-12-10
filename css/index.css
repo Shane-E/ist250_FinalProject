@@ -1,0 +1,10 @@
+#content #bio{
+    width: 480px;
+    float: left;
+}
+
+#content #bio-image img{
+    width: 480px;
+    float: right;
+    border-radius: 10px;
+}

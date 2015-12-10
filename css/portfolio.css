@@ -1,0 +1,17 @@
+#content table{
+    border-collapse: collapse;
+}
+
+#content table, #content th, #content td{
+    border: 2px solid black;
+}
+
+#content th{
+    font-size: 1.5em;
+    font-family: "Courier New", "Courier", "Helvetica", "serif";
+}
+
+.image{
+    width: 400px;
+    border-radius: 10px;
+}
