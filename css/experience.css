@@ -1,0 +1,28 @@
+#content{
+    width: 1200px;
+}
+
+figure{
+    display: inline-block;
+    width: 300px;
+}
+
+#content #figures{
+    text-align: center;
+}
+
+figure figcaption{
+    width: 300px;
+}
+
+#content #other-skills h2{
+    margin-left: 25px;
+}
+
+#content #other-skills{
+    padding-bottom: 200px;
+}
+
+#content #citations{
+    text-align: center;
+}

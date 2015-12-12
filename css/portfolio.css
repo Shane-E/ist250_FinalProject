@@ -6,7 +6,7 @@
     border: 2px solid black;
 }
 
-#content th{
+#content table th{
     font-size: 1.5em;
     font-family: "Courier New", "Courier", "Helvetica", "serif";
 }
@@ -14,4 +14,10 @@
 .image{
     width: 400px;
     border-radius: 10px;
+}
+
+#content table tr td{
+    text-align: center;
+    font-family: "Courier", "serif";
+    width: 500px;
 }
