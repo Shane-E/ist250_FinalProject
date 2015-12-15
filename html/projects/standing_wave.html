@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../../js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../js/standing_wave_js.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../../css/standing_wave_js.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/jquery-ui.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../../css/master.css"/>
+
+    <title>Standing Wave</title>
+</head>
+<body>
+<!--I chose to include a content wrapping div for every page to help with styling and organizing my content using css-->
+<div id="content-wrapper">
+    <!-- This is the header, including navigation, for the website -->
+    <div id="header">
+        <a #id="psuLink" class="urlLink" href="http://www.psu.edu/">
+            <img id="psuLogo" src="../../assets/PSU_Logo.jpg" alt="PSU Logo">
+        </a>
+        <div id="titleText">
+            <h1 id="webTitle">Shane Eckenrode</h1>
+            <h2 id="subTitle">Software Developer & Engineer</h2>
+        </div>
+        <div id="navigation">
+            <nav>
+                <a href="../index.html" class="nav-link"><button id="home">Home</button></a>
+                <a href="../experience.html" class="nav-link"><button id="experience">Experience</button></a>
+                <a href="../portfolio.html" class="nav-link"><button id="portfolio" class="active">Portfolio</button></a>
+                <a href="../resume.html" class="nav-link"><button id="resume">Resume</button></a>
+                <a href="../contact.html" class="nav-link"><button id="contact">Contact</button></a>
+            </nav>
+        </div>
+    </div>
+    <div id="standing-wave-app">
+        <div id="app-title">
+            <h2>Standing Wave JavaScript Application</h2>
+            <hr>
+        </div>
+        <div id="topDisplayArea" class="box">
+            <div id="canvasDisplay">
+                <canvas id="waveCanvas" width="500" height="220"></canvas>
+                <canvas id="bgCanvas" width="500" height="220"></canvas>
+            </div>
+        </div>
+        <div id="middleDisplayArea" class="box">
+            <div id="buttonInputs" align="center">
+                <form id="buttons">
+                    <input type='button' id="animate" class="buttons" value="Animate" onclick="updateAmp(defaultAmp,defaultAmp);timer.resume();">
+                    <input type='button' id="stop" class="buttons" value="Stop" onclick="timer.pause();">
+                    <input type='button' id="step" class="buttons" value="Step" onclick="timer.step();">
+                    <input type='button' id="reset" class="buttons" value="Reset" onclick="resetApp();">
+                    <input type='button' id="bgColor" class="buttons" value="White/Black">
+                    <input type='button' id="about" class="buttons" value="About" onclick="openAbout();">
+                </form>
+            </div>
+            <div id="checkboxInputs" align="center">
+                <form id="waveTypeCheckboxes">
+                    <div id="waveTypes"><label id="waveTitleLabel">Wave Display:</label>
+                        <label id="standingLabel"><input type="checkbox" id="standing" class="waveBox" onchange="updateVisible();" value="Standing Wave" checked>Standing Wave</label>
+                        <label id="incidentLabel"><input type="checkbox" id="incident" class="waveBox" onchange="updateVisible();" value="Incident Wave">Incident Wave</label>
+                        <label id="reflectedLabel"><input type="checkbox" id="reflected" class="waveBox" onchange="updateVisible();" value="Reflected Wave">Reflected Wave</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="bottomDisplayArea" class="box" >
+            <div id="sliderSelector" align="center">
+                <form>
+                    <div id="harmonicSliderLabel">n:</div>
+                    <div id="harmonicSlider"></div>
+                    <div id="sliderInputs">
+                        <input type="text" id="sliderValueBox" value="1">
+                        <input type="checkbox" id="harmonicSnap" onchange="setSliderIncrement();" checked>Snap to harmonics
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="cite-text">
+            <p>Developed for The Pennsylvania State University Chemistry Department</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

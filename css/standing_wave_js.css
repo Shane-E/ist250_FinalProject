@@ -1,0 +1,103 @@
+div.box{
+    border: 2px solid #408207;
+    border-radius: 3px;
+    margin: -2px;
+    padding: 1px;
+}
+
+#standing-wave-app{
+    width: 500px;
+    margin: 200px auto;
+}
+
+#standing-wave-app h2{
+    font-family: "Courier", "serif";
+    font-size: 1.25em;
+    margin: 0 auto;
+}
+
+#standing-wave-app #cite-text{
+    font-size: 0.75em;
+}
+
+#topDisplayArea, #middleDisplayArea, #bottomDisplayArea{
+    width: 500px;
+}
+
+#topDisplayArea{
+    height: 220px;
+}
+
+#middleDisplayArea{
+    height: 70px;
+    background: #f0f0f0;
+}
+
+#bottomDisplayArea{
+    height: 60px;
+    background: #f0f0f0;
+}
+
+#buttonInputs{
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+#checkboxInputs{
+    position: relative;
+    top: 10%;
+}
+
+#waveCanvas{
+    position: absolute;
+}
+
+#harmonicSliderLabel{
+    float: left;
+    width: 100px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#harmonicSlider label{
+    position: absolute;
+    width: 20px;
+    margin-left: -10px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+#harmonicSlider{
+    width: 175px;
+    margin-left: -170px;
+    margin-top: 20px;
+    border-color: black;
+}
+
+#sliderInputs{
+    float: right;
+    margin-top: -20px;
+    margin-right: 35px;
+}
+
+#sliderValueBox{
+    width: 35px;
+}
+
+.buttons{
+    background: linear-gradient(rgb(104,176,71), rgb(194, 223, 181));
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#standingLabel{
+    color: rgb(233, 162, 9);
+}
+
+#incidentLabel{
+    color: rgb(9, 14, 233);
+}
+
+#reflectedLabel{
+    color: rgb(9, 185, 41);
+}
